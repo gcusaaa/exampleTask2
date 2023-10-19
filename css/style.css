@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: rgb(53, 21, 213);
+    --secondary: rgb(255, 255, 255);
+    --awesome: hsl(135, 53%, 37%, .7);
+}
+.container {
+    margin-block: 30px;
+    --numbOfRed: 123;
+    --numbOfOrange: 100;
+    --numbOfYellow: 20;
+    border-width: 6px 10px;
+    border-image: radial-gradient(120deg, var(--numbOfRed), var(--numbOfOrange), var(--numbOfYellow));
+}
+#item1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.item>img{
+    width: 6rem;
+    aspect-ratio: 1/1;
+}
+.button-wrapper{
+    justify-content: space-between;
+}
+.button-wrapper button {
+    border: 2px solid;
+    border-image: linear-gradient(blue, var(--awesome)) 4fill;
+}
+.image-animation {
+    background: linear-gradient(to right, blue, white);
+    height: 400px;
+}
