@@ -11,6 +11,11 @@
     --awesome: hsl(135, 53%, 37%, .7);
 }
 .container {
+    background-size: contain;
+    height: 50vh;
+    width: 80vh;
+}
+.container {
     margin-block: 30px;
     --numbOfRed: 123;
     --numbOfOrange: 100;
